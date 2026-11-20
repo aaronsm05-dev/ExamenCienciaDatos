@@ -1,0 +1,15 @@
+﻿# Entorno virtual
+.venv/
+venv/
+env/
+
+# Caché de Python y Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Variables de entorno y sistema
+.env
+.DS_Store
+Thumbs.db
+

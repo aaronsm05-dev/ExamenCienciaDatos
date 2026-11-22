@@ -140,4 +140,4 @@ def train_all_models(
 
 
 if __name__ == "__main__":
-    train_all_models(selected_models=["svm"])
+    train_all_models()

@@ -38,8 +38,8 @@ def get_models_and_grids(random_state: int = RANDOM_STATE) -> dict:
                 },
                 {
                     "kernel": ["rbf"],
-                    "C": [0.1, 1.0],
-                    "gamma": ["scale"],
+                    "C": [0.1, 1.0, 10.0],
+                    "gamma": [0.01, 0.1, 1.0],
                 },
             ],
         },

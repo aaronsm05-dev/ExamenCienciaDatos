@@ -20,7 +20,7 @@
         "balanced"
       ]
     },
-    "training_time_sec": 10.42,
+    "training_time_sec": 6.16,
     "model_path": "C:\\Users\\aaron\\Desktop\\ExamenCienciaDatos\\outputs\\metrics\\trained_models\\logistic_regression_best.joblib"
   },
   "naive_bayes": {
@@ -39,7 +39,7 @@
         1e-07
       ]
     },
-    "training_time_sec": 0.72,
+    "training_time_sec": 0.53,
     "model_path": "C:\\Users\\aaron\\Desktop\\ExamenCienciaDatos\\outputs\\metrics\\trained_models\\naive_bayes_best.joblib"
   },
   "svm": {
@@ -47,12 +47,12 @@
     "cv_splits": 5,
     "samples_used_in_search": 10000,
     "best_params": {
-      "C": 1.0,
-      "gamma": "scale",
+      "C": 10.0,
+      "gamma": 0.1,
       "kernel": "rbf"
     },
-    "cv_best_mean_score": 0.39798386013523274,
-    "cv_best_std_score": 0.036668999558652195,
+    "cv_best_mean_score": 0.4766764824140163,
+    "cv_best_std_score": 0.043032736425822685,
     "search_space": [
       {
         "kernel": [
@@ -69,14 +69,17 @@
         ],
         "C": [
           0.1,
-          1.0
+          1.0,
+          10.0
         ],
         "gamma": [
-          "scale"
+          0.01,
+          0.1,
+          1.0
         ]
       }
     ],
-    "training_time_sec": 125.23,
+    "training_time_sec": 527.53,
     "model_path": "C:\\Users\\aaron\\Desktop\\ExamenCienciaDatos\\outputs\\metrics\\trained_models\\svm_best.joblib"
   },
   "mlp": {
@@ -114,7 +117,7 @@
         0.0005
       ]
     },
-    "training_time_sec": 90.48,
+    "training_time_sec": 85.06,
     "model_path": "C:\\Users\\aaron\\Desktop\\ExamenCienciaDatos\\outputs\\metrics\\trained_models\\mlp_best.joblib"
   }
 }

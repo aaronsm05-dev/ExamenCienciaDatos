@@ -12,10 +12,10 @@
     "tasa_error": 0.1526
   },
   "svm": {
-    "falsos_positivos": 176,
-    "falsos_negativos": 732,
-    "total_errores": 908,
-    "tasa_error": 0.1004
+    "falsos_positivos": 322,
+    "falsos_negativos": 584,
+    "total_errores": 906,
+    "tasa_error": 0.1002
   },
   "mlp": {
     "falsos_positivos": 261,

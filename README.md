@@ -33,8 +33,11 @@ pip install -r requirements.txt
 
 python -m src.data_prep          # preprocesa y guarda los datos
 python -m src.train              # busca hiperparámetros y entrena los 4 modelos
-python -m src.evaluate           # métricas en prueba, curvas y errores
+python -m src.evaluate           # métricas en prueba y curvas ROC / PR
+python -m src.error_analysis     # errores por grupo (job, month, poutcome...)
 ```
+
+El entrenamiento del SVM es la parte más lenta (varios minutos).
 
 El EDA está en `notebooks/01_eda_bank_marketing.ipynb`.
 
@@ -62,7 +65,7 @@ El escalado, la imputación y la codificación se ajustan solo con el conjunto d
 |---|---|---|---|---|---|---|---|
 | Regresión logística (referencia) | 0.550 ± 0.009 | 0.846 | 0.418 | 0.813 | 0.552 | 0.908 | 0.537 |
 | Naive Bayes | 0.437 ± 0.008 | 0.847 | 0.388 | 0.526 | 0.446 | 0.807 | 0.444 |
-| SVM | 0.398 ± 0.037 | 0.900 | 0.649 | 0.308 | 0.418 | 0.895 | 0.559 |
+| SVM | 0.477 ± 0.043 | 0.900 | 0.596 | 0.448 | 0.511 | 0.889 | 0.529 |
 | Red neuronal (MLP) | 0.554 ± 0.023 | 0.907 | 0.648 | 0.455 | 0.534 | 0.928 | 0.612 |
 
-Mejores hiperparámetros, espacio de búsqueda y tiempos: `outputs/metrics/cv_training_summary.json`. Resultados completos y matrices de confusión: `outputs/metrics/evaluation_results.csv` y `error_analysis.json`.
+Mejores hiperparámetros, espacio de búsqueda y tiempos: `outputs/metrics/cv_training_summary.json`. Resultados completos y matrices de confusión: `outputs/metrics/evaluation_results.csv` y `error_analysis.json`. Análisis de errores por grupo: `outputs/metrics/error_by_group.csv` y `outputs/figures/error_recall_by_group.png`.

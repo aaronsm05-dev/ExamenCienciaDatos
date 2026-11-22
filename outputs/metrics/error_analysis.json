@@ -1,0 +1,26 @@
+{
+  "logistic_regression": {
+    "falsos_positivos": 1196,
+    "falsos_negativos": 198,
+    "total_errores": 1394,
+    "tasa_error": 0.1542
+  },
+  "naive_bayes": {
+    "falsos_positivos": 878,
+    "falsos_negativos": 502,
+    "total_errores": 1380,
+    "tasa_error": 0.1526
+  },
+  "svm": {
+    "falsos_positivos": 176,
+    "falsos_negativos": 732,
+    "total_errores": 908,
+    "tasa_error": 0.1004
+  },
+  "mlp": {
+    "falsos_positivos": 261,
+    "falsos_negativos": 577,
+    "total_errores": 838,
+    "tasa_error": 0.0927
+  }
+}

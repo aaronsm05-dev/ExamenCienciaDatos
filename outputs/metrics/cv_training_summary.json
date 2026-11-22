@@ -1,0 +1,39 @@
+{
+  "svm": {
+    "scoring": "f1",
+    "cv_splits": 5,
+    "samples_used_in_search": 10000,
+    "best_params": {
+      "C": 1.0,
+      "gamma": "scale",
+      "kernel": "rbf"
+    },
+    "cv_best_mean_score": 0.39798386013523274,
+    "cv_best_std_score": 0.036668999558652195,
+    "search_space": [
+      {
+        "kernel": [
+          "linear"
+        ],
+        "C": [
+          0.1,
+          1.0
+        ]
+      },
+      {
+        "kernel": [
+          "rbf"
+        ],
+        "C": [
+          0.1,
+          1.0
+        ],
+        "gamma": [
+          "scale"
+        ]
+      }
+    ],
+    "training_time_sec": 116.14,
+    "model_path": "C:\\Users\\aaron\\Desktop\\ExamenCienciaDatos\\outputs\\metrics\\trained_models\\svm_best.joblib"
+  }
+}
